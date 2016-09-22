@@ -221,7 +221,7 @@
             this.Controls.Add(this.LanguageLabel);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Lehel Guitars";
             ((System.ComponentModel.ISupportInitialize)(this.LehelGuitarsPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
