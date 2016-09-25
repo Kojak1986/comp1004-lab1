@@ -1,6 +1,6 @@
 ﻿namespace comp1004_lab1
 {
-    partial class Form1
+    partial class LehelGuitarsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LehelGuitarsForm));
             this.LanguageLabel = new System.Windows.Forms.Label();
             this.EnglishRadioButton = new System.Windows.Forms.RadioButton();
             this.FrenchRadioButton = new System.Windows.Forms.RadioButton();
@@ -196,7 +196,7 @@
             this.LehelGuitarsPictureBox.TabIndex = 16;
             this.LehelGuitarsPictureBox.TabStop = false;
             // 
-            // Form1
+            // LehelGuitarsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -219,9 +219,10 @@
             this.Controls.Add(this.FrenchRadioButton);
             this.Controls.Add(this.EnglishRadioButton);
             this.Controls.Add(this.LanguageLabel);
-            this.Name = "Form1";
+            this.Name = "LehelGuitarsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lehel Guitars";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LehelGuitarsForm_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.LehelGuitarsPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace comp1004_lab1
 {
-    public partial class Form1 : Form
+    public partial class LehelGuitarsForm : Form
     {
-        public Form1()
+        public LehelGuitarsForm()
         {
             InitializeComponent();
+        }
+
+        private void LehelGuitarsForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

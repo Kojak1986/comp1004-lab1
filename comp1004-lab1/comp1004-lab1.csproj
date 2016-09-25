@@ -46,16 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Assignment1SplashForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Assignment1SplashForm.Designer.cs">
+      <DependentUpon>Assignment1SplashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LehelGuitarsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LehelGuitarsForm.Designer.cs">
+      <DependentUpon>LehelGuitarsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Assignment1SplashForm.resx">
+      <DependentUpon>Assignment1SplashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LehelGuitarsForm.resx">
+      <DependentUpon>LehelGuitarsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
