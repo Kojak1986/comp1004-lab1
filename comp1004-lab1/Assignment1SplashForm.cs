@@ -20,7 +20,7 @@ namespace comp1004_lab1
         private void SplashFormTimer_Tick(object sender, EventArgs e)
         {
             SplashFormTimer.Enabled = false;
-            LehelGuitarsForm lehelGuitarsForm = new LehelGuitarsForm();
+            MailOrder lehelGuitarsForm = new MailOrder();
            
 
             lehelGuitarsForm.Show();

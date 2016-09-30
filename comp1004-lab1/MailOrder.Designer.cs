@@ -1,6 +1,6 @@
 ﻿namespace comp1004_lab1
 {
-    partial class LehelGuitarsForm
+    partial class MailOrder
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LehelGuitarsForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MailOrder));
             this.LanguageLabel = new System.Windows.Forms.Label();
             this.EnglishRadioButton = new System.Windows.Forms.RadioButton();
             this.FrenchRadioButton = new System.Windows.Forms.RadioButton();
@@ -39,7 +39,7 @@
             this.SalesBonusLabel = new System.Windows.Forms.Label();
             this.CalculateButton = new System.Windows.Forms.Button();
             this.PrintButton = new System.Windows.Forms.Button();
-            this.ClearButton = new System.Windows.Forms.Button();
+            this.NextButton = new System.Windows.Forms.Button();
             this.EmployeeNameTextBox = new System.Windows.Forms.TextBox();
             this.EmployeeIDTextBox = new System.Windows.Forms.TextBox();
             this.HoursWorkedTextBox = new System.Windows.Forms.TextBox();
@@ -79,7 +79,7 @@
             this.FrenchRadioButton.TabStop = true;
             this.FrenchRadioButton.Text = "Francais";
             this.FrenchRadioButton.UseVisualStyleBackColor = true;
-            this.FrenchRadioButton.CheckedChanged += new System.EventHandler(this.FrenchRadioButton_CheckedChanged);
+            this.FrenchRadioButton.CheckedChanged += new System.EventHandler(this._FrenchRadioButton_CheckedChanged);
             // 
             // EmployeeNameLabel
             // 
@@ -134,6 +134,7 @@
             this.CalculateButton.TabIndex = 8;
             this.CalculateButton.Text = "Calculate";
             this.CalculateButton.UseVisualStyleBackColor = true;
+            this.CalculateButton.Click += new System.EventHandler(this._CalculateButton_Click);
             // 
             // PrintButton
             // 
@@ -143,15 +144,17 @@
             this.PrintButton.TabIndex = 9;
             this.PrintButton.Text = "Print";
             this.PrintButton.UseVisualStyleBackColor = true;
+            this.PrintButton.Click += new System.EventHandler(this._PrintButton_Click);
             // 
-            // ClearButton
+            // NextButton
             // 
-            this.ClearButton.Location = new System.Drawing.Point(197, 268);
-            this.ClearButton.Name = "ClearButton";
-            this.ClearButton.Size = new System.Drawing.Size(75, 23);
-            this.ClearButton.TabIndex = 10;
-            this.ClearButton.Text = "Clear";
-            this.ClearButton.UseVisualStyleBackColor = true;
+            this.NextButton.Location = new System.Drawing.Point(197, 268);
+            this.NextButton.Name = "NextButton";
+            this.NextButton.Size = new System.Drawing.Size(75, 23);
+            this.NextButton.TabIndex = 10;
+            this.NextButton.Text = "Next";
+            this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this._ClearButton_Click);
             // 
             // EmployeeNameTextBox
             // 
@@ -185,6 +188,7 @@
             // 
             this.SalesBonusTextBox.Location = new System.Drawing.Point(117, 224);
             this.SalesBonusTextBox.Name = "SalesBonusTextBox";
+            this.SalesBonusTextBox.ReadOnly = true;
             this.SalesBonusTextBox.Size = new System.Drawing.Size(100, 20);
             this.SalesBonusTextBox.TabIndex = 15;
             // 
@@ -197,7 +201,7 @@
             this.LehelGuitarsPictureBox.TabIndex = 16;
             this.LehelGuitarsPictureBox.TabStop = false;
             // 
-            // LehelGuitarsForm
+            // MailOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -209,7 +213,7 @@
             this.Controls.Add(this.HoursWorkedTextBox);
             this.Controls.Add(this.EmployeeIDTextBox);
             this.Controls.Add(this.EmployeeNameTextBox);
-            this.Controls.Add(this.ClearButton);
+            this.Controls.Add(this.NextButton);
             this.Controls.Add(this.PrintButton);
             this.Controls.Add(this.CalculateButton);
             this.Controls.Add(this.SalesBonusLabel);
@@ -220,10 +224,12 @@
             this.Controls.Add(this.FrenchRadioButton);
             this.Controls.Add(this.EnglishRadioButton);
             this.Controls.Add(this.LanguageLabel);
-            this.Name = "LehelGuitarsForm";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.Name = "MailOrder";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lehel Guitars";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LehelGuitarsForm_FormClosing);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this._LehelGuitarsForm_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.LehelGuitarsPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -242,7 +248,7 @@
         private System.Windows.Forms.Label SalesBonusLabel;
         private System.Windows.Forms.Button CalculateButton;
         private System.Windows.Forms.Button PrintButton;
-        private System.Windows.Forms.Button ClearButton;
+        private System.Windows.Forms.Button NextButton;
         private System.Windows.Forms.TextBox EmployeeNameTextBox;
         private System.Windows.Forms.TextBox EmployeeIDTextBox;
         private System.Windows.Forms.TextBox HoursWorkedTextBox;

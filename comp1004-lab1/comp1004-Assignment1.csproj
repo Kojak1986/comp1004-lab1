@@ -52,19 +52,19 @@
     <Compile Include="Assignment1SplashForm.Designer.cs">
       <DependentUpon>Assignment1SplashForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="LehelGuitarsForm.cs">
+    <Compile Include="MailOrder.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LehelGuitarsForm.Designer.cs">
-      <DependentUpon>LehelGuitarsForm.cs</DependentUpon>
+    <Compile Include="MailOrder.Designer.cs">
+      <DependentUpon>MailOrder.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Assignment1SplashForm.resx">
       <DependentUpon>Assignment1SplashForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LehelGuitarsForm.resx">
-      <DependentUpon>LehelGuitarsForm.cs</DependentUpon>
+    <EmbeddedResource Include="MailOrder.resx">
+      <DependentUpon>MailOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
