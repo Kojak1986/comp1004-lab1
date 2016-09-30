@@ -32,7 +32,7 @@
             this.LanguageLabel = new System.Windows.Forms.Label();
             this.EnglishRadioButton = new System.Windows.Forms.RadioButton();
             this.FrenchRadioButton = new System.Windows.Forms.RadioButton();
-            this.EmployeeNameButton = new System.Windows.Forms.Label();
+            this.EmployeeNameLabel = new System.Windows.Forms.Label();
             this.EmployeeIDLabel = new System.Windows.Forms.Label();
             this.HoursWorkedLabel = new System.Windows.Forms.Label();
             this.TotalSalesLabel = new System.Windows.Forms.Label();
@@ -79,15 +79,16 @@
             this.FrenchRadioButton.TabStop = true;
             this.FrenchRadioButton.Text = "Francais";
             this.FrenchRadioButton.UseVisualStyleBackColor = true;
+            this.FrenchRadioButton.CheckedChanged += new System.EventHandler(this.FrenchRadioButton_CheckedChanged);
             // 
-            // EmployeeNameButton
+            // EmployeeNameLabel
             // 
-            this.EmployeeNameButton.AutoSize = true;
-            this.EmployeeNameButton.Location = new System.Drawing.Point(17, 119);
-            this.EmployeeNameButton.Name = "EmployeeNameButton";
-            this.EmployeeNameButton.Size = new System.Drawing.Size(94, 13);
-            this.EmployeeNameButton.TabIndex = 3;
-            this.EmployeeNameButton.Text = "Employee\'s Name:";
+            this.EmployeeNameLabel.AutoSize = true;
+            this.EmployeeNameLabel.Location = new System.Drawing.Point(17, 119);
+            this.EmployeeNameLabel.Name = "EmployeeNameLabel";
+            this.EmployeeNameLabel.Size = new System.Drawing.Size(94, 13);
+            this.EmployeeNameLabel.TabIndex = 3;
+            this.EmployeeNameLabel.Text = "Employee\'s Name:";
             // 
             // EmployeeIDLabel
             // 
@@ -140,7 +141,7 @@
             this.PrintButton.Name = "PrintButton";
             this.PrintButton.Size = new System.Drawing.Size(75, 23);
             this.PrintButton.TabIndex = 9;
-            this.PrintButton.Text = "Print ";
+            this.PrintButton.Text = "Print";
             this.PrintButton.UseVisualStyleBackColor = true;
             // 
             // ClearButton
@@ -190,9 +191,9 @@
             // LehelGuitarsPictureBox
             // 
             this.LehelGuitarsPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("LehelGuitarsPictureBox.Image")));
-            this.LehelGuitarsPictureBox.Location = new System.Drawing.Point(19, 12);
+            this.LehelGuitarsPictureBox.Location = new System.Drawing.Point(19, 22);
             this.LehelGuitarsPictureBox.Name = "LehelGuitarsPictureBox";
-            this.LehelGuitarsPictureBox.Size = new System.Drawing.Size(104, 89);
+            this.LehelGuitarsPictureBox.Size = new System.Drawing.Size(92, 77);
             this.LehelGuitarsPictureBox.TabIndex = 16;
             this.LehelGuitarsPictureBox.TabStop = false;
             // 
@@ -215,7 +216,7 @@
             this.Controls.Add(this.TotalSalesLabel);
             this.Controls.Add(this.HoursWorkedLabel);
             this.Controls.Add(this.EmployeeIDLabel);
-            this.Controls.Add(this.EmployeeNameButton);
+            this.Controls.Add(this.EmployeeNameLabel);
             this.Controls.Add(this.FrenchRadioButton);
             this.Controls.Add(this.EnglishRadioButton);
             this.Controls.Add(this.LanguageLabel);
@@ -234,7 +235,7 @@
         private System.Windows.Forms.Label LanguageLabel;
         private System.Windows.Forms.RadioButton EnglishRadioButton;
         private System.Windows.Forms.RadioButton FrenchRadioButton;
-        private System.Windows.Forms.Label EmployeeNameButton;
+        private System.Windows.Forms.Label EmployeeNameLabel;
         private System.Windows.Forms.Label EmployeeIDLabel;
         private System.Windows.Forms.Label HoursWorkedLabel;
         private System.Windows.Forms.Label TotalSalesLabel;
